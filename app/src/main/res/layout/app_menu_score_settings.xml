@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.battledwarf.scorereaper.settings.settings_score_btn_management">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/info_countdown_timer"
+        android:gravity="center"
+        android:text="@string/Heading_Score_Values"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:columnCount="1"
+        android:rowCount="9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="9"
+            android:columnOrderPreserved="false"
+            android:rowCount="1">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/btnValue1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textViewValue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/SettingsBtnValue"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:layout_row="0"
+                android:layout_column="8"
+                android:layout_marginEnd="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:checked="false"
+                android:text="@string/SwitchLabel"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="9"
+            android:columnOrderPreserved="false"
+            android:rowCount="1">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/btnValue2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textViewValue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/SettingsBtnValue" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:layout_row="0"
+                android:layout_column="8"
+                android:layout_marginEnd="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:checked="false"
+                android:text="@string/SwitchLabel"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="9"
+            android:columnOrderPreserved="false"
+            android:rowCount="1">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/btnValue3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textViewValue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/SettingsBtnValue" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:layout_row="0"
+                android:layout_column="8"
+                android:layout_marginEnd="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:checked="false"
+                android:text="@string/SwitchLabel"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="9"
+            android:columnOrderPreserved="false"
+            android:rowCount="1">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/btnValue4"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textViewValue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/SettingsBtnValue" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Switch
+                android:id="@+id/switch4"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:layout_row="0"
+                android:layout_column="8"
+                android:layout_marginEnd="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:checked="false"
+                android:text="@string/SwitchLabel"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="9"
+            android:columnOrderPreserved="false"
+            android:rowCount="1">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/btnValue5"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textViewValue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/SettingsBtnValue" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Switch
+                android:id="@+id/switch5"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:layout_row="0"
+                android:layout_column="8"
+                android:layout_marginEnd="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:checked="false"
+                android:text="@string/SwitchLabel"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        </GridLayout>
+
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

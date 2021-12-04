@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:icon="@drawable/outline_person_black_18"
+        android:title="@string/preference_title_user_details">
+        <EditTextPreference
+            android:key="prefUsername"
+            android:persistent="true"
+            android:summary="@string/pref_user_name_summary"
+            android:title="@string/pref_user_name" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:icon="@drawable/outline_settings_black_18"
+        android:title="@string/pref_title_app_defaults">
+        <EditTextPreference
+            android:defaultValue="false"
+            android:key="prefCountdownTimer"
+            android:persistent="true"
+            android:summary="@string/pref_countdown_time_summary"
+            android:title="@string/pref_countdown_time" />
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="prefActivityName"
+            android:persistent="true"
+            android:summary="@string/pref_cp_summary"
+            android:title="@string/pref_cp_title" />
+        <PreferenceCategory
+            android:icon="@drawable/outline_settings_black_18"
+            android:title="@string/pref_title_server_settings">
+            <EditTextPreference
+                android:defaultValue="@string/default_server"
+                android:key="prefServerAddress"
+                android:persistent="true"
+                android:summary="@string/pref_server_address_summary"
+                android:title="@string/pref_server_address" />
+            <EditTextPreference
+                android:key="prefServerUser"
+                android:persistent="true"
+                android:summary="@string/pref_server_user_summary"
+                android:title="@string/pref_server_user" />
+            <EditTextPreference
+                android:key="prefServerPassword"
+                android:persistent="true"
+                android:summary="@string/pref_server_password_summary"
+                android:title="@string/pref_server_user_password" />
+        </PreferenceCategory>
+    </PreferenceCategory>
+
+</PreferenceScreen>

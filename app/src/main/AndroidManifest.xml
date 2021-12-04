@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.battledwarf.scorereaper">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SCOREREAPER"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:label"
+        tools:targetApi="m">
+        <activity
+            android:name=".Activity_Splash_Screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            tools:replace="screenOrientation" />
+        <activity
+            android:name=".Activity_Home_Page"
+            android:exported="true"
+            android:label="@string/MainLabel"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.HOME" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".points.ChallengePoint"
+            android:exported="true"
+            android:label="Challenge Point"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.CHECKPOINT" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".stopwatch.stopwatch"
+            android:exported="true"
+            android:label="Stopwatch"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.LAPS" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".settings.settings_score_btn_management"
+            android:exported="true"
+            android:label="Score Button Preferences"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SCORESETTINGS" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".points.all_points_scan_data"
+            android:exported="true"
+            android:label="Data: Points"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.POINTSDATA" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".stopwatch.all_laps_scan_data"
+            android:exported="true"
+            android:label="Data: Laps"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.LAPSSDATA" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".settings.settings_data_management"
+            android:exported="true"
+            android:label="Database Advanced Settings"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.ADVANCEDDATA" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity_Information_Page"
+            android:exported="true"
+            android:label="About"
+            android:screenOrientation="portrait"
+            android:theme="@style/InfoTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.INFOPAGE" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".preferences.app_settings_Activity"
+            android:exported="true"
+            android:label="App Settings"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

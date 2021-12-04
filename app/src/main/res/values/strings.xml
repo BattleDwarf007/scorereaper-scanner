@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="info_countdown_timer">Info Countdown timer value</string>
+    <string name="Heading_Score_Values">Set the challenge point button values</string>
+    <string name="MainLabel">Time Keeping and Scoring</string>
+    <string name="ManualScoreEntry">Score</string>
+    <string name="SwitchLabel">Enable</string>
+    <string name="SettingsBtnValue">Points Button Value</string>Button Value
+    <string name="StofLogo">Scorereaper Logo</string>
+    <string name="StatusLogo">status Logo</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+    <string name="stopwats_begin">00:00:00</string>
+    <string name="save">Save</string>
+    <string name="car_number">Car Number</string>
+    <string name="engine_size">Engine Size</string>
+    <string name="value">Value</string>
+    <string name="todo">TODO</string>
+
+    <string name="preference_title_user_details">User Details</string>
+    <string name="pref_user_name">User Name</string>
+    <string name="pref_user_name_summary">Name of the user operating the application</string>
+
+    <string name="pref_title_app_defaults">Default Settings</string>
+    <string name="pref_countdown_time">Default Countdown Time</string>
+    <string name="pref_countdown_time_summary">The default value for the countdown timer</string>
+    <string name="pref_server_address_summary">Sync Server Name or IP</string>
+    <string name="pref_server_address">Server Address</string>
+    <string name="pref_title_server_settings">Server Connection Settings</string>
+    <string name="menu_settings">App Settings</string>
+    <string name="menu_data_settings">Data Settings</string>
+    <string name="menu_car_data">Cars Data</string>
+    <string name="menu_info">Info</string>
+    <string name="delete_points_data">Delete Points Data</string>
+    <string name="export_points_data">Export Points Data</string>
+    <string name="delete_laps_data">Delete Laps Data</string>
+    <string name="export_laps_data">Export Laps Data</string>
+    <string name="scorereaper_logo">Scorereaper Logo</string>
+    <string name="cancel">Cancel</string>
+    <string name="magic_word">delete</string>
+    <string name="menu_score_settings">Score Settings</string>
+    <string name="pref_server_user_summary">Sync Server Username</string>
+    <string name="pref_server_user">Username</string>
+    <string name="pref_server_password_summary">Sync Server Password</string>
+    <string name="pref_server_user_password">Password</string>
+    <string name="default_server">https://bullrun.scorereaper.co.za:8443</string>
+    <string name="replace">Replace?</string>
+    <string name="placeholder">placeholder</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="pref_cp_summary">Identifier for the checkpoint or activity the device will be used at.</string>
+    <string name="pref_cp_title">Activity/Checkpoint</string>
+    <string name="stop">STOP</string>
+    <string name="start">START</string>
+    <string name="scoring">Activity Scoring</string>
+    <string name="stopwatch">Stopwatch</string>
+    <string name="display_all_scan_data">Display all scan data</string>
+    <string name="are_you_sure_you_want_to_permanently_delete_all_records">Are you sure you want to permanently delete all records? Type `delete` to confirm</string>
+    <string name="delete">Delete?</string>
+    <string name="delete_all_records">Delete all records</string>
+    <string name="replace_the_record">Replace the record</string>
+    <string name="sync_the_data_to_the_server">Sync the data to the server</string>
+    <string name="error">ERROR</string>
+    <string name="error_image">error_image</string>
+    <string name="Server_settings_error"><![CDATA[The necessary details needed to connect to the server is missing. Please confirm the settings under app settings > Server Connection Settings]]></string>
+    <string name="scan">scan</string>
+
+
+</resources>
